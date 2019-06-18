@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 /** Playing with Delegates */
 // Sean Phillips 6/17/2019
@@ -17,7 +17,15 @@ namespace DelegateExample
     {
         static void Main()
         {
-            DoubleOp[] operations =
+            //DoubleOp[] operations =
+            //{
+            //    MathOperations.MultiplyByTwo,
+            //    MathOperations.Square
+            //};
+
+
+            // Another way of doing it
+            Func<double, double>[] operations =
             {
                 MathOperations.MultiplyByTwo,
                 MathOperations.Square
